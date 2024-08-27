@@ -1,0 +1,636 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 1000PX;
+    /* height: 100vh; */
+    border: 1px solid black;
+    margin: 0 auto;
+}
+.admin_header_body{
+    width: 800PX;
+    height: 100vh;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+/* ==================home Header======================= */
+#home_header{
+    background-color: #007bff;
+    width: auto;
+    height: 30px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+
+}
+#home_header img{
+    width: 400px;
+    height: 25px;
+}
+/* ==================header menu======================= */
+
+#home_menu{
+    background-color: black;
+    height: 50px; /* Adjusted height for better vertical centering */
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+#home_menu ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#home_menu ul li{
+    float: left;
+    list-style: none;
+
+    
+}
+#home_menu ul li a{
+    padding: 17px 10px; 
+    color: white;
+    text-decoration: none;
+    
+}
+#home_menu ul li a:hover{
+    background-color: #007bff;
+}
+
+.active{
+    background-color: #007bff;
+    color: #020202;
+}
+
+#home_futer{
+    height: 50px;
+    background-color: #ddff00;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+/* ==================user.php======================= */
+
+#user_header_section{
+    background-color: cornflowerblue;
+    height: 50px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 30px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    
+
+
+}
+
+#user_header_section button{
+    background-color: cornflowerblue;
+    border: none;
+    color: white;
+    font-weight: 800;
+}
+#user_header_section button a{
+    text-decoration: none;
+    color: white;
+}
+
+#user_menu{
+    height: 40px;
+    width: auto;
+    background-color: aliceblue;
+    align-items: center;
+    display: flex;
+}
+#user_menu ul li{
+    float: left;
+    list-style: none;
+
+}
+#user_menu ul li a{
+    padding: 11px 10px; 
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+#user_menu ul li a:hover{
+   background-color: cornflowerblue;
+
+}
+
+#add_button_section{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 30px;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+#add_button_section button{
+   
+    border: none;
+    font-weight: 700;
+    color: white;
+
+}
+#add_button_section button a{
+    padding: 5px 20px; 
+    color: white;
+    text-decoration: none;
+    background-color: cornflowerblue;
+}
+
+#table_user_section table{
+    margin: 0 auto; 
+    width: 700px;
+    text-align: center; 
+    border-collapse: collapse;  
+    border: 1px solid rgb(208, 208, 208); 
+    margin-top: 20px;
+}
+#table_user_section table th{
+    background-color: black;
+    color: white;
+    padding: 5px  0;
+    
+}
+#table_user_section table td{
+    padding: 5px  5px;
+}
+
+.user_edit{
+    text-decoration: none;
+    color: black;
+}
+.user_delete{
+    text-decoration: none;
+    color: black;
+}
+
+#paginations_user_Section {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+#paginations_user_Section a{
+    padding: 10px;
+    text-decoration: none;
+    background-color:cornflowerblue ;
+    margin: 0 5px;
+    color: white;
+}
+.activedddd{
+    border: 1px solid red;
+    background-color: aqua;
+    border-radius: 10px;
+}
+#paginations_user_Section a:last-child{
+    border-radius: 0 5px 5px 0  ; 
+}
+
+#paginations_user_Section a:first-child{
+    border-radius: 5px 0 0 5px  ; 
+}
+
+#paginations_user_Section a:hover{
+    background-color: rgb(64, 113, 204);
+}
+
+/* ==================add_users.php======================= */
+#add_user_body {
+    background-color: rgb(240, 240, 240);
+}
+#add_user_from {
+    width: 500px;
+    background-color: white;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 30px;
+
+}
+#add_user_from input{
+    width: 480px;
+    margin: 5px 0 10px 0; 
+    padding: 5px;
+    
+
+}
+#add_user_from select{
+    width: 493px;
+    padding: 5px;
+    margin-top: 5px;
+
+}
+#add_user_from button{
+    border: none;
+    background-color: cornflowerblue;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    color: white;
+
+}
+
+/* ==================login index======================= */
+
+#loging_section{
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+
+}
+
+#loging_section div{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+#loging_section input{
+    width: 98%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+#loging_section div button{
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#loging_section button:hover {
+    background-color: #0056b3;
+}
+
+#loging_section form div p{
+    color: red;
+    text-align: center;
+}
+
+/* ==================add post======================= */
+#add_post_section{
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:80vh;
+    margin: 0;
+
+}
+#add_post_section div{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 600px;
+}
+
+#add_post_section input  {
+    width: 98%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#add_post_section  textarea {
+    width: 98%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+#add_post_section select{
+    width: 98%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#add_post_section div button{
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#add_post_section button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ==================index home======================= */
+#bodysection{
+    /* margin: 0; */
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
+    height: 900px;
+    
+   
+}
+.bodyDiv{
+    float: left;
+    display: flex;
+    flex-direction: column;    
+    /* margin-left: 20px; */
+
+}
+
+.leftDiv{
+    /* background-color: #4c00ff; */
+    width: 550px;
+    
+
+}
+.rightDiv{
+    width: 350px;
+    margin-left: 40px;
+    border-left: 1px solid rgb(216, 216, 216);
+    padding-left: 10px;
+}
+
+.prent_div{
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+}
+.chaild_div{
+    float: left;
+    height: 140px;
+    margin-top: 10px;
+
+}
+
+.chaild_div_left{
+    width: 200px;
+}
+.chaild_div_left img{
+    width: 143px;
+    height: 120px;
+}
+
+.chaild_div_right{
+    
+    width: 500px;
+    margin-left: 10px;
+}
+
+#category_name{
+    width: auto;
+    height: 50px;
+    margin-top: 20px;
+}
+#category_name div{
+    width: auto;
+    height: 1px;
+    background-color: #020202;
+    margin-top: 5px;
+}
+.activity_section{
+    float: left;
+    margin-top: 5px 5px;
+}
+.activity_section a{
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.activity_section a:first-child{
+    padding-left: 0;
+
+}
+
+.chaild_div_right .read_more{
+    background-color: #007bff;
+    border: none;
+    padding: 0 10px;
+    padding-bottom: 2px;
+    color: white;
+    text-decoration: none;
+    margin-left: 292px;
+}
+.chaild_div_right div{
+    height: 20px;
+    margin: 5px 0;
+}
+.chaild_div_right p{
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.single_section h2{
+    margin-top: 30px;
+}
+
+.single_section .activity_section{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.single_section .main_image{
+    width: 480px;
+    height: 300px;
+    
+}
+
+
+
+/* ==================Sitebar.php======================= */
+
+.serText{
+    width: 5px;
+    height: 20px;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-align: center; 
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.serText h2{
+    margin-left: 10px;
+}
+.cerInput{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+
+}
+.cerInput input{
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    margin: 0;
+    padding-right: 0;
+    border-right: none;
+
+}
+.cerInput button{
+    padding: 6.5px;
+    border-radius: 0 5px 5px 0;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    margin: 0;
+    cursor:pointer;
+}
+.cerInput button:hover{
+    background-color: #004da0;
+    
+}
+#search_resent{
+    margin-bottom: 50px;
+}
+.resent{
+    display: flex;
+    width: auto;
+    height: 20px;
+}
+.recentText{
+    width: 5px;
+    height: 20px;
+    background-color: #007bff;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.resent h2{
+    margin-top: 16px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+
+
+.sitebar_prent_div{
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+    /* margin-top: 50px; */
+}
+.sitebar_chaild_div{
+    float: left;
+    height: 80px;
+    margin-top: 10px;
+
+}
+
+.sitebar_chaild_div_left{
+    width:80px;
+}
+.sitebar_chaild_div_left img{
+    width: 80px;
+    height: 80px;
+}
+
+.sitebar_chaild_div_right{
+    width: 400px;
+    margin-left: 10px;
+}
+
+
+.sitebar_div_2{
+    /* margin: 10px 0; */
+    
+    
+}
+
+
+.sitebar_div_3 button{
+    border: none;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: white;
+    cursor:pointer;     
+    
+}
+/* ==================setting.php======================= */
+#setting_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+#setting_section input ,textarea{
+    width: 500px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+#setting_section label{
+    color: #007bff;
+}
+#setting_section img{
+    height: 100px;
+    min-width: 100px;
+    max-width: 200px;
+    width: 100px;
+}
+#setting_section button{
+    padding: 5px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+#setting_section button:hover{
+    background-color: #317dcf;
+}
